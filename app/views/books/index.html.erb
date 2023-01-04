@@ -11,6 +11,7 @@
     <th>introduction</th>
     <td><%# @user.introduction %>introduction</td>
   </tr>
+</table>
 
   <p>プロフィール編集</p>
 
@@ -27,6 +28,12 @@
   <%= f.submit 'Create Book' %>
 
   <% end %>
-
-
-</table>
+  
+  
+  <h1>Book 一覧</h1>
+  <table class= table>
+  <% @books.each do |book| %>
+  <%= book.title %>
+  <%= book.body %>
+  <% end %>
+  </table>
