@@ -11,7 +11,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  
+
 
     <% if user_signed_in? %>
     <body>
@@ -62,7 +62,7 @@
           </li>
 
           <li class="nav-link text-light ">
-            <%= link_to root_path, class: "nav-link text-light" do %>
+            <%= link_to about_path, class: "nav-link text-light" do %>
             <i class="fas fa-link"></i>About
             <% end %>
           </li>
