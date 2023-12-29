@@ -6,6 +6,8 @@ class BooksController < ApplicationController
   
   def create
     @book = book.new(book_params)
+    @book.save
+    redirect_to book_path(@book.id)
   end
   
   
