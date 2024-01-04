@@ -28,4 +28,12 @@
   <%= f.submit 'Create Book' %>
 
   <% end %>
-  
+
+
+  <h1>Book 一覧</h1>
+  <table class= table>
+  <% @books.each do |book| %>
+  <%= book.title %>
+  <%= book.body %>
+  <% end %>
+  </table>
